@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Argon Community Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ARGON</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#clubs">Clubs</a>
+      <a href="#events">Events</a>
+      <a href="#activity">Activity</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="section">
+      <div class="section-inner">
+        <h1>Welcome to Argon</h1>
+        <p class="subtitle">
+          A May 30, 2018 build that is for Standalone Quest.
+        </p>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <h2>Featured Rooms</h2>
+            <ul id="featured-rooms"></ul>
+          </div>
+          <div class="card">
+            <h2>Upcoming Events</h2>
+            <ul id="home-events"></ul>
+          </div>
+          <div class="card">
+            <h2>Announcements</h2>
+            <ul id="announcements">
+              <li>Announcements are located in the Discord!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section id="rooms" class="section">
+      <div class="section-inner">
+        <h1>Rooms</h1>
+        <p class="subtitle">Curated spaces from the Argon community.</p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-tag="all">All</button>
+          <button class="filter-btn" data-tag="hangout">Hangout</button>
+          <button class="filter-btn" data-tag="pvp">PVP</button>
+          <button class="filter-btn" data-tag="event">Event</button>
+        </div>
+
+        <div id="rooms-list" class="grid grid-3"></div>
+      </div>
+    </section>
+
+        <div id="clubs-list" class="grid grid-3"></div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section">
+      <div class="section-inner">
+        <h1>Events</h1>
+        <p class="subtitle">What’s happening in Argon?</p>
+
+        <div id="events-list" class="grid grid-2"></div>
+      </div>
+    </section>
+
+    <!-- Activity -->
+    <section id="activity" class="section">
+      <div class="section-inner">
+        <h1>Activity Feed</h1>
+        <p class="subtitle">Recent happenings from rooms, clubs, and members.</p>
+
+        <ul id="activity-feed" class="activity-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Argon&copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
